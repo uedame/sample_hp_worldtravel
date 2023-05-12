@@ -39,7 +39,6 @@ header {
 	letter-spacing: -0.04em;
 }
 
-
 .logo span {
 	color: var(--color1);
 }
@@ -47,7 +46,6 @@ header {
 .header__menu li {
 	margin-left: 40px;
 }
-
 
 .header__menu li a:hover {
 	color: var(--color2);
@@ -271,6 +269,10 @@ margin: 40px auto;
 
 	nav {
 		margin-top: 20px;
+	}
+
+	.header__menu li {
+		margin: 0px;
 	}
 
 	/* コンセプト */
