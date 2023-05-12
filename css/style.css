@@ -1,0 +1,318 @@
+:root {
+	--color1: #64f64f;
+	--color2: #f75a05;
+	--color3: #c1ff9a;
+	--color4: #cad3eec9;
+}
+
+html {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.pop {
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 1120px;
+	/* background-color: #333; */
+	margin: 0 auto;
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ヘッダー */
+header {
+	padding: 27px 0;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+
+.logo span {
+	color: var(--color1);
+}
+
+.header__menu li {
+	margin-left: 40px;
+}
+
+
+.header__menu li a:hover {
+	color: var(--color2);
+	transition: .3s all;
+}
+
+.header__menu li a {
+	transition: .3s all;
+}
+
+/* メイン */
+#hero {
+	background-image: url("../img/il_04.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 540px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 90px;
+	overflow: hidden;
+}
+
+#hero::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .2;
+	z-index: 1;
+}
+
+.hero_inner {
+	z-index: 2;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+.hero_inner p {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.hero_inner h1 {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+/* コンセプト */
+#concept {
+	margin-bottom: 90px;
+}
+
+.section__title {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--color1);
+	margin-bottom: 40px;
+}
+
+#concept h3 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.column-2 {
+	width: 48%;
+}
+
+.text {
+	line-height: 2;
+}
+
+.concept-img {
+	background-image: url("../img/il_06.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 340px;
+	border-radius: 20px;
+}
+
+.heading {
+	font-family: 'Dancing Script', cursive;
+	font-size: 160px;
+	font-weight: 700;
+	color: var(--color1);
+	opacity: .2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-35%);
+	z-index: -1;
+}
+
+/* サービス */
+#service {
+	margin-bottom: 90px;
+}
+
+.service-inner {
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.column-40 {
+	width: 40%;
+}
+
+.column-55 {
+	width: 55%;
+}
+
+#service img {
+	border-radius: 20px;
+	object-fit: cover;
+	height: 300px;
+}
+
+#service h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+/* カンパニー */
+#company {
+	margin-bottom: 120px;
+}
+
+#company dl {
+	max-width: 900px;
+	margin-left: auto;
+}
+
+#company dt {
+	width: 30%;
+	padding: 48px 0;
+	font-weight: 500;
+	border-bottom: 1px solid var(--color3);
+}
+
+#company dd {
+	width: 70%;
+	padding: 48px 0;
+	border-bottom: 1px solid var(--color3);
+}
+
+/* ボトム */
+.column-a{
+	background-image: url("../img/il_11.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 24%;
+	height: 270px;
+	border-radius: 20px;
+}
+
+.column-b{
+	background-image: url("../img/il_08.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 18%;
+	height: 270px;
+	border-radius: 20px;
+}
+
+.column-c{
+	background-image: url("../img/il_03.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 28%;
+	height: 270px;
+	border-radius: 20px;
+}
+
+.column-d{
+	background-image: url("../img/il_10.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 22%;
+	height: 270px;
+	border-radius: 20px;
+}
+
+/* フッター */
+footer{
+text-align: center;
+margin: 40px auto;
+}
+
+.copyright{
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+/* レスポンシブ、スマホ対応 */
+@media screen and (max-width  :768px) {
+
+	.heading{
+		display: none;
+	}
+
+	/* ヘッダー */
+	header .container{justify-content: center;}
+	.header_menu li{margin: 20px 0 16px;}
+	#hero{height: 460px;}
+	.hero_inner p {font-size: 15px;}
+	.hero_inner h1 {font-size: 20px;}
+
+	.flex_res{
+		display: block;
+		text-align: center;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	/* コンセプト */
+	#concept h3 {
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+
+	.column-2 {	width: 100%;}
+
+	.text{
+		font-size: 15px;
+		line-height: 1.7;
+	}
+
+	.concept-img{	margin-top: 30px;	}
+
+	.column-40{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.column-55{
+		width: 100%;
+	}
+	/* サービス */
+	#service h3 {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 24px;
+	}
+
+	/* カンパニー */
+	#company dt,#company dd {
+		padding: 24px 0;
+	}
+
+	/* ボトム */
+	.column-a,.column-b,.column-c,.column-d{
+	width: 48%;
+	height: 140px;
+	margin: 1%;
+	}
+}
