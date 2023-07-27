@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +7,10 @@
 	<title>World Travel HP</title>
 	<!-- リセットCSS -->
 	<link rel="stylesheet" href="./css/destyle.css">
+	<!-- swiperに必要 --><link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 	<!-- スタイルCSS -->
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- google fonts -->
@@ -17,7 +20,6 @@
 		href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
 		rel="stylesheet">
 </head>
-
 <body>
 	<header>
 		<div class="container flex pop flex_res">
@@ -29,11 +31,11 @@
 					<li><a href="#concept">CONCEPT</a></li>
 					<li><a href="#service">SERVICE</a></li>
 					<li><a href="#company">COMPANY</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-
 	<main>
 		<section id="hero" class="container">
 			<div class="hero_inner">
@@ -118,20 +120,26 @@
 				<dd>佐藤 世界</dd>
 			</dl>
 		</section>
-		<div class="flex">
-			<div class="column-a"></div>
-			<div class="column-b"></div>
-			<div class="column-c"></div>
-			<div class="column-d"></div>
+		<section id="gallery" class="container">
+			<h2 class="section__title pop">GALLERY</h2>
+		</section>
+		<!-- あえてsectionから外す。画像がcontainer幅で見切れてしまうため -->
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide column-a"></div>
+				<div class="swiper-slide column-b"></div>
+				<div class="swiper-slide column-c"></div>
+				<div class="swiper-slide column-d"></div>
+			</div>
 		</div>
 	</main>
 	<footer>
 		<a href="" class="logo">
 			<span>world</span> travel
 		</a>
-		<div class="copyright">© Travel Company.</div>
+		<div class="copyright">© 2023 Travel Company.</div>
 	</footer>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="script/script.js"></script>
 </body>
-
 </html>
